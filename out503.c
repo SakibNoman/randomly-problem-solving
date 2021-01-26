@@ -1,0 +1,24 @@
+#include<stdio.h>
+main()
+{
+    long long f,l,sum,i;
+    while(scanf("%lli%lli",&f,&l)!=EOF)
+    {
+        sum=0;
+        if(f%2==0||f==0)
+        {
+            for(i=f;i<=l;i+=2)
+            {
+                sum=sum+i;
+            }
+        }
+        if(f%2!=0)
+        {
+            for(i=f+1;i<=l;i+=2)
+            {
+                sum=sum+i;
+            }
+        }
+        printf("%lli\n",sum);
+    }
+}
